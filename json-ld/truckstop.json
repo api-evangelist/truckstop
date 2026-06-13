@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Truckstop",
+  "url": "https://truckstop.com/",
+  "description": "Truckstop is a freight marketplace and load board platform founded in 1995 as the first load board on the internet. It offers REST APIs for managing load postings, carrier searches, rate negotiation, and freight payment processing, serving shippers, brokers, and carriers.",
+  "foundingDate": "1995",
+  "sameAs": [
+    "https://www.linkedin.com/company/truckstop/",
+    "https://x.com/trckstopdotcom",
+    "https://github.com/truckstop"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Developer Support",
+    "url": "https://developer.truckstop.com/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Truckstop API Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Truckstop Load Management API",
+        "description": "REST API for posting, updating, refreshing, and deleting loads on the Truckstop load board. Includes Load Boost, pause/unpause for BIN loads, and tender management.",
+        "url": "https://developer.truckstop.com/reference/load-management-1"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Load Search API",
+        "description": "API for carriers and brokers to search available loads on the Truckstop load board with filtering, sorting, and bulk detail retrieval.",
+        "url": "https://developer.truckstop.com/reference/load-operations"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Carrier Network API",
+        "description": "API for managing carrier networks including bulk add/update/remove by DOT number, preferred carrier lists, carrier groups, compliance status, and carrier search.",
+        "url": "https://developer.truckstop.com/reference/general-overview"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Rate Insights API",
+        "description": "API for accessing predictive rate data including booked rate estimates, trendlines over 4-week and 36-month periods, posted rate estimates, and rate crowdsourcing.",
+        "url": "https://developer.truckstop.com/reference/rate-insights-v3"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Risk Factor API",
+        "description": "API for carrier risk analysis including single and multiple carrier risk reports by MC/DOT number, RMIS certification status queries, and monitored carrier list management.",
+        "url": "https://developer.truckstop.com/reference/general-overview"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Truck Management API",
+        "description": "API for posting trucks with equipment options, searching posted trucks, viewing truck details, deleting trucks, and accessing Hot Prospects hidden capacity search.",
+        "url": "https://developer.truckstop.com/reference/general-overview"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Document API",
+        "description": "API for managing freight-related documents associated with loads and transactions on the Truckstop platform.",
+        "url": "https://developer.truckstop.com/reference/document-api"
+      },
+      {
+        "@type": "Offer",
+        "name": "Truckstop Booked Rates API",
+        "description": "API for retrieving booked load details by Load ID, tender details by Tender ID, CSV exports of booked loads, and tenders by account for freight payment processing.",
+        "url": "https://developer.truckstop.com/reference/booked-rates"
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Freight Marketplace",
+    "Load Board",
+    "Trucking",
+    "Logistics",
+    "Carrier Compliance",
+    "Rate Insights",
+    "Freight Payment",
+    "Transportation"
+  ]
+}
