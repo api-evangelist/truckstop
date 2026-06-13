@@ -1,0 +1,39 @@
+name: Truckstop API Rate Limits
+description: Rate limit information for the Truckstop REST API. Specific rate limit thresholds are not publicly documented; contact the Truckstop integrations team for details applicable to your SIA agreement.
+url: https://developer.truckstop.com/reference/general-overview
+contact: TSI@Truckstop.com
+
+notes:
+  - Rate limits are not publicly disclosed by Truckstop
+  - All API access requires a signed Systems Integration Agreement (SIA)
+  - Rate limits may be negotiated as part of the SIA
+  - Contact integrations@truckstop.com for rate limit details
+
+authentication:
+  type: OAuth 2.0 Token-Based
+  flows:
+    - name: Resource Owner Password
+      description: For proprietary systems integrating directly with Truckstop
+      use_case: Internal or proprietary TMS systems
+    - name: Authorization Code
+      description: For third-party TMS systems integrating on behalf of Truckstop customers
+      use_case: Third-party Transportation Management Systems
+  token_expiry:
+    refresh_token: Six months or one single use, whichever comes first
+  support: TSI@Truckstop.com
+
+known_costs:
+  - operation: Load Boost
+    cost: $1.00 per use
+    description: Promotes a load to top of search results for 30 minutes
+
+endpoints:
+  base_url: https://api.truckstop.com
+  developer_portal: https://developer.truckstop.com
+  documentation: https://developer.truckstop.com/reference/general-overview
+
+api_access_requirements:
+  - Signed Systems Integration Agreement (SIA) required
+  - Load Board Pro subscription or equivalent required
+  - API credentials issued after SIA execution
+  - Contact account manager to initiate integration process

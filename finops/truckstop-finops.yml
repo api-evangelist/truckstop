@@ -1,0 +1,103 @@
+name: Truckstop FinOps
+description: Financial operations guidance for managing Truckstop API and platform costs, covering subscription tiers, per-use charges, and integration cost considerations for freight brokers, carriers, and shippers.
+url: https://truckstop.com/product/load-board/pricing/
+contact: integrations@truckstop.com
+
+cost_model:
+  type: subscription_plus_usage
+  description: Truckstop uses a monthly subscription model per user combined with optional per-use charges for features like Load Boost. API access is bundled with Pro-tier subscriptions and above, requiring a signed Systems Integration Agreement (SIA).
+
+subscription_costs:
+  carriers:
+    - plan: All Van Basic
+      monthly: 42.00
+      currency: USD
+      notes: Application fee of $42 credited toward first month
+    - plan: All Van Advanced
+      monthly: 135.00
+      currency: USD
+    - plan: All Van Pro
+      monthly: 159.00
+      currency: USD
+    - plan: Heavy Haul Pro
+      monthly: 299.00
+      currency: USD
+      seats: 3
+    - plan: Dry Van Basic
+      monthly: 35.00
+      currency: USD
+      seats: 3
+    - plan: Dry Van Pro
+      monthly: 129.00
+      currency: USD
+      seats: 3
+
+  brokers:
+    - plan: Broker Basic
+      monthly_per_user: 109.00
+      currency: USD
+      api_access: false
+    - plan: Broker Pro
+      monthly_per_user: 239.00
+      currency: USD
+      api_access: true
+      included_credits:
+        - type: Load Boost
+          quantity: 20
+          period: month
+    - plan: Broker Premium
+      monthly_per_user: 369.00
+      currency: USD
+      api_access: true
+      notes: Includes one additional user at no extra charge
+
+  shippers:
+    - plan: Shipper Basic
+      monthly_per_user: 109.00
+      currency: USD
+      api_access: false
+    - plan: Shipper Advanced
+      monthly_per_user: 175.00
+      currency: USD
+      api_access: false
+    - plan: Shipper Pro
+      monthly_per_user: 239.00
+      currency: USD
+      api_access: true
+
+usage_charges:
+  - name: Load Boost
+    cost: 1.00
+    unit: per use
+    currency: USD
+    description: Promotes a load posting to the top of search results for 30 minutes
+    included_in:
+      - Broker Pro (20 free per month)
+      - Broker Premium (20 free per month via Pro inclusion)
+
+one_time_fees:
+  - name: Carrier Application Fee
+    amount: 42.00
+    currency: USD
+    description: Non-refundable application fee for carrier accounts; credited toward first month subscription if approved
+
+cost_optimization:
+  - recommendation: Start with Broker Pro for API access rather than Premium to minimize per-user cost while enabling integrations
+  - recommendation: Use the 20 included Load Boost credits in Pro/Premium plans before purchasing additional boosts at $1 each
+  - recommendation: Dry Van Basic at $35/month for 3 users offers the lowest cost entry for carrier teams
+  - recommendation: Negotiate rate limits and API quotas as part of the SIA to avoid unexpected usage overages
+  - recommendation: Consolidate users under Premium plan (includes extra user) when team size exceeds 3 users on Pro
+
+budget_planning:
+  minimum_api_access_monthly:
+    broker: 239.00
+    shipper: 239.00
+    carrier: 159.00
+    currency: USD
+    notes: These are the minimum subscription costs to access API features; SIA negotiation may involve additional costs
+
+hidden_costs:
+  - Signed Systems Integration Agreement (SIA) required before API credentials are issued; legal review costs may apply
+  - Load Boost charges accrue quickly at scale if included credits are exhausted
+  - Additional per-user costs apply for teams larger than single-user accounts on broker/shipper plans
+  - Rate limit overages policy not publicly disclosed; negotiate terms in SIA

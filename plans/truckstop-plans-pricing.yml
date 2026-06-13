@@ -1,0 +1,186 @@
+name: Truckstop Plans and Pricing
+description: Subscription plans for Truckstop Load Board covering carriers, brokers, and shippers. API access requires a signed Systems Integration Agreement (SIA) and is available on Load Board Pro tier and above.
+url: https://truckstop.com/product/load-board/pricing/
+contact: integrations@truckstop.com
+phone: 1-888-364-1189
+notes: A $42 non-refundable application fee applies for carrier plans. All prices per user per month unless noted. API access requires contacting account manager and executing an SIA agreement.
+
+plans:
+
+  # Carrier Plans
+  - name: Carrier All Van Basic
+    description: Unlimited load search, truck posting, private loads, and backhaul search for dry van carriers.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 42.00
+    unit: month
+    currency: USD
+    audience: carrier
+    features:
+      - Unlimited load search
+      - Truck posting
+      - Private loads
+      - Backhaul search
+
+  - name: Carrier All Van Advanced
+    description: Everything in Basic plus broker ratings, faster booking, and fuel tools.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 135.00
+    unit: month
+    currency: USD
+    audience: carrier
+    features:
+      - Everything in Carrier Basic
+      - Broker ratings
+      - Faster booking
+      - Fuel tools
+
+  - name: Carrier All Van Pro
+    description: Everything in Advanced plus rate insights, live loads, and lane planning.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 159.00
+    unit: month
+    currency: USD
+    audience: carrier
+    features:
+      - Everything in Carrier Advanced
+      - Rate insights
+      - Live loads
+      - Lane planning
+
+  - name: Carrier Heavy Haul Pro
+    description: Heavy haul-focused load search, expanded radius, and permit quotes for up to 3 users.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 299.00
+    unit: month
+    currency: USD
+    audience: carrier
+    seats: 3
+    features:
+      - Heavy haul-focused search
+      - Expanded search radius
+      - Permit quotes
+      - Up to 3 users
+
+  - name: Carrier Dry Van Basic
+    description: Load search, private loads, and truck posting for up to 3 users.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 35.00
+    unit: month
+    currency: USD
+    audience: carrier
+    seats: 3
+    features:
+      - Load search
+      - Private loads
+      - Truck posting
+
+  - name: Carrier Dry Van Pro
+    description: Everything in Dry Van Basic plus FreightWaves SONAR insights, live loads, and broker ratings for up to 3 users.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 129.00
+    unit: month
+    currency: USD
+    audience: carrier
+    seats: 3
+    features:
+      - Everything in Dry Van Basic
+      - FreightWaves SONAR insights
+      - Live loads
+      - Broker ratings
+
+  # Broker Plans
+  - name: Broker Basic
+    description: Truck and lane searching, load posting, private loads, and Load Boost for freight brokers.
+    url: https://truckstop.com/product/load-board/broker-pricing/
+    price: 109.00
+    unit: user/month
+    currency: USD
+    audience: broker
+    features:
+      - Truck and lane searching
+      - Load posting
+      - Private loads
+      - Carrier authority age filtering
+      - Load Boost ($1 per use)
+      - Broker assistant extension
+
+  - name: Broker Pro
+    description: Everything in Broker Basic plus carrier performance ratings, rate insights, real-time updates, and 20 free Load Boost credits monthly.
+    url: https://truckstop.com/product/load-board/broker-pricing/
+    price: 239.00
+    unit: user/month
+    currency: USD
+    audience: broker
+    api_access: true
+    features:
+      - Everything in Broker Basic
+      - Carrier performance ratings
+      - Rate insights analytics
+      - Real-time load updates
+      - Load insights tools
+      - Book It Now load posting
+      - 20 free Load Boost credits per month
+
+  - name: Broker Premium
+    description: Everything in Broker Pro plus carrier monitoring, predictive carrier sourcing, and one additional user at no charge.
+    url: https://truckstop.com/product/load-board/broker-pricing/
+    price: 369.00
+    unit: user/month
+    currency: USD
+    audience: broker
+    api_access: true
+    features:
+      - Everything in Broker Pro
+      - Carrier monitoring
+      - Predictive carrier sourcing
+      - One additional user included
+
+  # Shipper Plans
+  - name: Shipper Basic
+    description: Truck and lane searching, load posting, and decision tools for shippers.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 109.00
+    unit: user/month
+    currency: USD
+    audience: shipper
+    features:
+      - Truck and lane searching
+      - Load posting
+      - Decision tools
+
+  - name: Shipper Advanced
+    description: Everything in Shipper Basic plus carrier performance ratings and rate insights.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 175.00
+    unit: user/month
+    currency: USD
+    audience: shipper
+    features:
+      - Everything in Shipper Basic
+      - Carrier performance ratings
+      - Rate insights
+
+  - name: Shipper Pro
+    description: Everything in Shipper Advanced plus real-time updates and load insights.
+    url: https://truckstop.com/product/load-board/pricing/
+    price: 239.00
+    unit: user/month
+    currency: USD
+    audience: shipper
+    api_access: true
+    features:
+      - Everything in Shipper Advanced
+      - Real-time load updates
+      - Load insights
+
+  # Add-ons
+  - name: Load Boost
+    description: Promote a load posting to the top of search results for 30 minutes for increased carrier visibility.
+    url: https://developer.truckstop.com/reference/general-overview
+    price: 1.00
+    unit: use
+    currency: USD
+    audience: broker
+    features:
+      - 30-minute top-of-results placement
+      - Available via API

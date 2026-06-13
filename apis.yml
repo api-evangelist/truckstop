@@ -1,0 +1,154 @@
+aid: truckstop
+name: Truckstop
+description: Truckstop is a freight marketplace and load board platform offering a REST API for managing load postings, carrier searches, rate negotiation, and freight payment processing. The platform serves shippers, brokers, and carriers with tools for truck and lane searching, rate insights, carrier compliance monitoring, tender management, risk factor analysis, and document management. Founded in 1995 as the first load board on the internet, Truckstop provides API integrations requiring a signed Systems Integration Agreement (SIA) and supports both Resource Owner Password and Authorization Code OAuth 2.0 flows.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/truckstop/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Freight
+  - Load Board
+  - Trucking
+  - Logistics
+  - Freight Marketplace
+  - Carrier Search
+  - Rate Insights
+  - Transportation
+  - Broker
+  - Shipper
+
+apis:
+  - name: Truckstop Load Management API
+    description: REST API for posting, updating, refreshing, and deleting loads on the Truckstop load board. Includes Load Boost for promoted visibility, pause/unpause for BIN loads, and tender management for booked loads.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/load-management-1
+    baseURL: https://api.truckstop.com
+    tags:
+      - Load Management
+      - Load Board
+      - Freight
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/load-management-1
+      - type: OpenAPI
+        url: https://developer.truckstop.com/llms.txt
+
+  - name: Truckstop Load Search API
+    description: API for carriers and brokers to search available loads on the Truckstop load board with filtering, sorting, and bulk detail retrieval.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/load-operations
+    baseURL: https://api.truckstop.com
+    tags:
+      - Load Search
+      - Freight
+      - Carrier
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/load-operations
+
+  - name: Truckstop Carrier Network API
+    description: API for managing carrier networks, including bulk add/update/remove by DOT number, preferred carrier lists, carrier groups, compliance status access, and carrier search within groups.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/general-overview
+    baseURL: https://api.truckstop.com
+    tags:
+      - Carrier Network
+      - Compliance
+      - Broker
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/general-overview
+
+  - name: Truckstop Rate Insights API
+    description: API for accessing predictive rate data including booked rate estimates and trendlines over 4-week and 36-month periods, posted rate estimates, and rate crowdsourcing submissions.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/rate-insights-v3
+    baseURL: https://api.truckstop.com
+    tags:
+      - Rate Insights
+      - Freight Rates
+      - Analytics
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/rate-insights-v3
+
+  - name: Truckstop Risk Factor API
+    description: API for carrier risk analysis including single and multiple carrier risk reports by MC/DOT number, search by email or phone, RMIS certification status queries, and monitored carrier list management.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/general-overview
+    baseURL: https://api.truckstop.com
+    tags:
+      - Risk Factor
+      - Compliance
+      - RMIS
+      - Carrier
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/general-overview
+
+  - name: Truckstop Truck Management API
+    description: API for posting trucks with equipment options, searching posted trucks, viewing truck details individually and in bulk, deleting trucks, and accessing Hot Prospects hidden capacity search.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/general-overview
+    baseURL: https://api.truckstop.com
+    tags:
+      - Truck Posting
+      - Capacity
+      - Carrier
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/general-overview
+
+  - name: Truckstop Document API
+    description: API for managing freight-related documents associated with loads and transactions on the Truckstop platform.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/document-api
+    baseURL: https://api.truckstop.com
+    tags:
+      - Documents
+      - Freight
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/document-api
+
+  - name: Truckstop Booked Rates API
+    description: API for retrieving booked load details by Load ID, tender details by Tender ID, CSV exports of booked loads, and tenders by account for freight payment processing.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.truckstop.com/reference/booked-rates
+    baseURL: https://api.truckstop.com
+    tags:
+      - Booked Rates
+      - Tender Management
+      - Freight Payment
+    properties:
+      - type: Documentation
+        url: https://developer.truckstop.com/reference/booked-rates
+
+common:
+  - type: Website
+    url: https://truckstop.com/
+  - type: Documentation
+    url: https://developer.truckstop.com/
+  - type: GitHubOrg
+    url: https://github.com/truckstop
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/truckstop/
+  - type: Blog
+    url: https://truckstop.com/blog/
+  - type: Pricing
+    url: https://truckstop.com/product/load-board/pricing/
+  - type: StatusPage
+    url: https://status.truckstop.com/
+  - type: X
+    url: https://x.com/trckstopdotcom
+  - type: Plans
+    url: plans/truckstop-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/truckstop-rate-limits.yml
+  - type: FinOps
+    url: finops/truckstop-finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
