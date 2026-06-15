@@ -1,7 +1,7 @@
 {
   "provider": "truckstop",
   "blogUrl": "https://truckstop.com/blog/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "The complete guide to fuel management for trucking",
@@ -93,5 +93,13 @@
       "url": "https://truckstop.com/blog/carrier-survey-freight-market-q1-2026/",
       "description": "Industry insights from carrier survey data for Q1 2026."
     }
-  ]
+  ],
+  "repo": "truckstop",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/truckstop/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
