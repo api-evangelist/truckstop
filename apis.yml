@@ -126,6 +126,8 @@ apis:
         url: https://developer.truckstop.com/reference/booked-rates
 
 common:
+  - type: DomainSecurity
+    url: security/truckstop-domain-security.yml
   - type: Website
     url: https://truckstop.com/
   - type: Documentation
