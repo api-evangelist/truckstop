@@ -5,17 +5,14 @@
       "source": "https://truckstop.com/blog/feed/",
       "feed_url": "https://truckstop.com/blog/feed/",
       "title": "",
-      "saved": 3,
+      "saved": 0,
       "method": "feed"
     },
     {
       "source": "https://www.linkedin.com/company/truckstop/",
-      "feed_url": "https://www.linkedin.com/company/truckstop/",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
-  "post_count": 6
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 13
 }
