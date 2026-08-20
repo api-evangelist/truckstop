@@ -27,6 +27,17 @@ tags:
   - Carrier Search
   - Rate Insights
   - Transportation
+  - Brokers
+  - Shipper
+tags_raw:
+  - Freight
+  - Load Board
+  - Trucking
+  - Logistics
+  - Freight Marketplace
+  - Carrier Search
+  - Rate Insights
+  - Transportation
   - Broker
   - Shipper
 
@@ -65,6 +76,10 @@ apis:
     humanURL: https://developer.truckstop.com/reference/general-overview
     baseURL: https://api.truckstop.com
     tags:
+      - Carrier Network
+      - Compliance
+      - Brokers
+    tags_raw:
       - Carrier Network
       - Compliance
       - Broker
