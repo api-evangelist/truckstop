@@ -1,6 +1,17 @@
 aid: truckstop
 name: Truckstop
 description: Truckstop is a freight marketplace and load board platform offering a REST API for managing load postings, carrier searches, rate negotiation, and freight payment processing. The platform serves shippers, brokers, and carriers with tools for truck and lane searching, rate insights, carrier compliance monitoring, tender management, risk factor analysis, and document management. Founded in 1995 as the first load board on the internet, Truckstop provides API integrations requiring a signed Systems Integration Agreement (SIA) and supports both Resource Owner Password and Authorization Code OAuth 2.0 flows.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
