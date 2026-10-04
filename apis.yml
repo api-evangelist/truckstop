@@ -38,8 +38,8 @@ tags:
   - Carrier Search
   - Rate Insights
   - Transportation
-  - Brokers
   - Shippers
+  - Freight Brokerage
 tags_raw:
   - Freight
   - Load Board
@@ -49,8 +49,8 @@ tags_raw:
   - Carrier Search
   - Rate Insights
   - Transportation
-  - Broker
   - Shipper
+  - Freight Brokerage
 
 apis:
   - name: Truckstop Load Management API
@@ -192,3 +192,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-tags-removed:
+- Brokers
