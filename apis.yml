@@ -89,11 +89,12 @@ apis:
     tags:
       - Carrier Network
       - Compliance
-      - Brokers
+      - Brokerage
     tags_raw:
       - Carrier Network
       - Compliance
       - Broker
+      - Brokers
     properties:
       - type: Documentation
         url: https://developer.truckstop.com/reference/general-overview
