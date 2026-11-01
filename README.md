@@ -1,4 +1,4 @@
-# Truckstop (truckstop)
+# Truckstop
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,180 +66,110 @@
 
 Truckstop is a freight marketplace and load board platform offering a REST API for managing load postings, carrier searches, rate negotiation, and freight payment processing. The platform serves shippers, brokers, and carriers with tools for truck and lane searching, rate insights, carrier compliance monitoring, tender management, risk factor analysis, and document management. Founded in 1995 as the first load board on the internet, Truckstop provides API integrations requiring a signed Systems Integration Agreement (SIA) and supports both Resource Owner Password and Authorization Code OAuth 2.0 flows.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/truckstop/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/truckstop/refs/heads/main/apis.yml)
+**Areas:** Freight · Load Board · Trucking · Logistics · Freight Marketplace · Carrier Search · Rate Insights · Transportation · Shippers · Freight Brokerage
 
-## Tags
+## Truckstop on APIs.io
 
-- Freight
-- Load Board
-- Trucking
-- Logistics
-- Freight Marketplace
-- Carrier Search
-- Rate Insights
-- Transportation
-- Broker
-- Shipper
+Everything profiled for Truckstop is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/truckstop/](https://apis.io/providers/truckstop/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (8)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [Truckstop Load Management API](https://apis.io/apis/truckstop/truckstop-load-management-api/) — REST API for posting, updating, refreshing, and deleting loads on the Truckstop load board. Includes Load Boost for promoted visibility, pause/unpause for…
+- [Truckstop Load Search API](https://apis.io/apis/truckstop/truckstop-load-search-api/) — API for carriers and brokers to search available loads on the Truckstop load board with filtering, sorting, and bulk detail retrieval.
+- [Truckstop Carrier Network API](https://apis.io/apis/truckstop/truckstop-carrier-network-api/) — API for managing carrier networks, including bulk add/update/remove by DOT number, preferred carrier lists, carrier groups, compliance status access, and…
+- [Truckstop Rate Insights API](https://apis.io/apis/truckstop/truckstop-rate-insights-api/) — API for accessing predictive rate data including booked rate estimates and trendlines over 4-week and 36-month periods, posted rate estimates, and rate…
+- [Truckstop Risk Factor API](https://apis.io/apis/truckstop/truckstop-risk-factor-api/) — API for carrier risk analysis including single and multiple carrier risk reports by MC/DOT number, search by email or phone, RMIS certification status…
+- [Truckstop Truck Management API](https://apis.io/apis/truckstop/truckstop-truck-management-api/) — API for posting trucks with equipment options, searching posted trucks, viewing truck details individually and in bulk, deleting trucks, and accessing Hot…
+- [Truckstop Document API](https://apis.io/apis/truckstop/truckstop-document-api/) — API for managing freight-related documents associated with loads and transactions on the Truckstop platform.
+- [Truckstop Booked Rates API](https://apis.io/apis/truckstop/truckstop-booked-rates-api/) — API for retrieving booked load details by Load ID, tender details by Tender ID, CSV exports of booked loads, and tenders by account for freight payment…
 
-## APIs
+### Published properties
 
-### Truckstop Load Management API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API for posting, updating, refreshing, and deleting loads on the Truckstop load board. Includes Load Boost for promoted visibility, pause/unpause for BIN loads, and tender management for booked loads.
+#### Security (1)
 
-- **Human URL:** [https://developer.truckstop.com/reference/load-management-1](https://developer.truckstop.com/reference/load-management-1)
-- **Base URL:** `https://api.truckstop.com`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Truckstop Domain Security](https://apis.io/security/truckstop/truckstop-domain-security/)
 
-- Load Management
-- Load Board
-- Freight
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://developer.truckstop.com/reference/load-management-1)
-- [OpenAPI](https://developer.truckstop.com/llms.txt) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Truckstop Plans Pricing](https://apis.io/plans/truckstop/truckstop-plans-pricing/)
 
-### Truckstop Load Search API
+#### Rate limits (1)
 
-API for carriers and brokers to search available loads on the Truckstop load board with filtering, sorting, and bulk detail retrieval.
+Published request limits.
 
-- **Human URL:** [https://developer.truckstop.com/reference/load-operations](https://developer.truckstop.com/reference/load-operations)
-- **Base URL:** `https://api.truckstop.com`
+- [Truckstop Rate Limits](https://apis.io/rate-limits/truckstop/truckstop-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Load Search
-- Freight
-- Carrier
+What the API costs to run, by operation.
 
-#### Properties
+- [Truckstop Finops](https://apis.io/finops/truckstop/truckstop-finops/)
 
-- [Documentation](https://developer.truckstop.com/reference/load-operations)
+## Where to find this API
 
-### Truckstop Carrier Network API
-
-API for managing carrier networks, including bulk add/update/remove by DOT number, preferred carrier lists, carrier groups, compliance status access, and carrier search within groups.
-
-- **Human URL:** [https://developer.truckstop.com/reference/general-overview](https://developer.truckstop.com/reference/general-overview)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Carrier Network
-- Compliance
-- Broker
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/general-overview)
-
-### Truckstop Rate Insights API
-
-API for accessing predictive rate data including booked rate estimates and trendlines over 4-week and 36-month periods, posted rate estimates, and rate crowdsourcing submissions.
-
-- **Human URL:** [https://developer.truckstop.com/reference/rate-insights-v3](https://developer.truckstop.com/reference/rate-insights-v3)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Rate Insights
-- Freight Rates
-- Analytics
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/rate-insights-v3)
-
-### Truckstop Risk Factor API
-
-API for carrier risk analysis including single and multiple carrier risk reports by MC/DOT number, search by email or phone, RMIS certification status queries, and monitored carrier list management.
-
-- **Human URL:** [https://developer.truckstop.com/reference/general-overview](https://developer.truckstop.com/reference/general-overview)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Risk Factor
-- Compliance
-- RMIS
-- Carrier
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/general-overview)
-
-### Truckstop Truck Management API
-
-API for posting trucks with equipment options, searching posted trucks, viewing truck details individually and in bulk, deleting trucks, and accessing Hot Prospects hidden capacity search.
-
-- **Human URL:** [https://developer.truckstop.com/reference/general-overview](https://developer.truckstop.com/reference/general-overview)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Truck Posting
-- Capacity
-- Carrier
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/general-overview)
-
-### Truckstop Document API
-
-API for managing freight-related documents associated with loads and transactions on the Truckstop platform.
-
-- **Human URL:** [https://developer.truckstop.com/reference/document-api](https://developer.truckstop.com/reference/document-api)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Documents
-- Freight
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/document-api)
-
-### Truckstop Booked Rates API
-
-API for retrieving booked load details by Load ID, tender details by Tender ID, CSV exports of booked loads, and tenders by account for freight payment processing.
-
-- **Human URL:** [https://developer.truckstop.com/reference/booked-rates](https://developer.truckstop.com/reference/booked-rates)
-- **Base URL:** `https://api.truckstop.com`
-
-#### Tags
-
-- Booked Rates
-- Tender Management
-- Freight Payment
-
-#### Properties
-
-- [Documentation](https://developer.truckstop.com/reference/booked-rates)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://truckstop.com/)
 - [Documentation](https://developer.truckstop.com/)
-- [Git Hub Org](https://github.com/truckstop)
-- [LinkedIn](https://www.linkedin.com/company/truckstop/)
-- [Blog](https://truckstop.com/blog/)
 - [Pricing](https://truckstop.com/product/load-board/pricing/)
-- [Status Page](https://status.truckstop.com/)
-- [X (Twitter)](https://x.com/trckstopdotcom)
-- [Plans](plans/truckstop-plans-pricing.yml)
-- [Rate Limits](rate-limits/truckstop-rate-limits.yml)
-- [Fin Ops](finops/truckstop-finops.yml)
+- [Blog](https://truckstop.com/blog/)
+- [Status](https://status.truckstop.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 18.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.0** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/truckstop/](https://apis.io/providers/truckstop/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Truckstop: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/truckstop/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
